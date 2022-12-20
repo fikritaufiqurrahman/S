@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJNIEZpa3JpIiwiZW1haWwiOiJlbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE2NzEwNjExMjAsImV4cCI6MTY3MTA2MTE0MH0.ineK3XlFAtwS2SZGT3fc1wS-xOUqgs7dPhfEr0icyOI
+
+
+###
+POST  http://localhost:5000/users/register
+Content-Type: application/json
+
+{
+    "name":"Asep Bambang",
+    "email":"asepbambang@gmail.com",
+    "password": "asepbambang",
+    "confPassword":"asepbambang"
+}
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email":"email@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
